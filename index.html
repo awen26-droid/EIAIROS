@@ -1,1 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EIAIROS</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-lang="en" data-chapter="mortal">
+    <main class="screen" id="screen" aria-label="EIAIROS opening screen">
+      <div class="bg bg-mortal" aria-hidden="true"></div>
+      <div class="bg bg-bygone" aria-hidden="true"></div>
+      <div class="veil" aria-hidden="true"></div>
 
+      <header class="topbar">
+        <p class="chapter-title" data-i18n="chapterTitle">The Martyr's Final Testament</p>
+
+        <nav class="nav" aria-label="Main navigation">
+          <button class="nav-button" id="aboutButton" type="button" data-i18n="about">About me</button>
+
+          <div class="menu">
+            <button class="nav-button" type="button" aria-haspopup="true" aria-expanded="false" data-menu-button data-i18n="language">Language</button>
+            <div class="menu-panel" role="menu">
+              <button type="button" role="menuitem" data-lang-choice="en">English</button>
+              <button type="button" role="menuitem" data-lang-choice="zh">Chinese</button>
+            </div>
+          </div>
+
+          <div class="menu">
+            <button class="nav-button" type="button" aria-haspopup="true" aria-expanded="false" data-menu-button data-i18n="chapter">Chapter</button>
+            <div class="menu-panel" role="menu">
+              <button type="button" role="menuitem" data-chapter-choice="mortal" data-i18n="mortal">The Mortal Realm</button>
+              <button type="button" role="menuitem" data-chapter-choice="bygone" data-i18n="bygone">The Bygone Age</button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="hero" aria-label="Opening title">
+        <h1 class="logo" aria-label="EIAIROS">
+          <span>E</span><span>I</span><span>A</span><span>I</span><span>R</span><span>O</span><span>S</span>
+        </h1>
+        <button class="start" id="startButton" type="button" data-i18n="start">-Click anywhere to start-</button>
+      </section>
+
+      <footer class="footer">
+        <time class="clock" id="clock">00:00:00</time>
+        <p class="loading"><span class="ornament">S</span><span data-i18n="loading">Sandbox loading...</span></p>
+      </footer>
+
+      <dialog class="about-modal" id="aboutModal" aria-labelledby="aboutTitle">
+        <button class="close" id="closeAbout" type="button" aria-label="Close">x</button>
+        <h2 id="aboutTitle" data-i18n="aboutTitle">About me</h2>
+        <p data-i18n="aboutBody">
+          Hello, and welcome.
+        </p>
+      </dialog>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -601,15 +601,17 @@ body.has-entered .hero {
 
 @media (orientation: portrait) and (max-width: 760px) {
   .bg {
-    background-size: auto 100%;
+    background-size: cover;
   }
 
   .bg-mortal {
-    background-position: 50% center;
+    background-image: url("./assets/mortal-realm-portrait.jpg");
+    background-position: center;
   }
 
   .bg-bygone {
-    background-position: 48% center;
+    background-image: url("./assets/bygone-age-portrait.jpg");
+    background-position: center;
   }
 
   .footer {

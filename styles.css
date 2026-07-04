@@ -1,11 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap");
+
 :root {
   color-scheme: dark;
   --latin-font: "Times New Roman", Times, serif;
-  --cjk-font: "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif SC", "SimSun", "FangSong", serif;
+  --cjk-font: "Noto Serif SC", "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "FangSong", serif;
   --paper: rgba(255, 255, 255, 0.92);
   --paper-soft: rgba(255, 255, 255, 0.72);
   --shadow: rgba(0, 0, 0, 0.52);
 }
+
 
 * {
   box-sizing: border-box;
@@ -607,6 +610,33 @@ body.has-entered .hero {
 
   .bg-bygone {
     background-position: 48% center;
+  }
+
+  .footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    height: 0;
+  }
+
+  .clock,
+  .loading {
+    position: fixed;
+    bottom: max(16px, env(safe-area-inset-bottom));
+    z-index: 5;
+    max-width: 46vw;
+    white-space: nowrap;
+  }
+
+  .clock {
+    left: 18px;
+    text-align: left;
+  }
+
+  .loading {
+    right: 18px;
+    text-align: right;
   }
 }
 

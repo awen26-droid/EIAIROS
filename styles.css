@@ -28,6 +28,12 @@ body[data-lang="zh"] {
   font-family: var(--latin-font), var(--cjk-font);
 }
 
+body[data-lang="zh"] [data-i18n],
+body[data-lang="zh"] .menu-panel button,
+body[data-lang="zh"] .about-modal p {
+  font-family: var(--cjk-font);
+}
+
 button {
   color: inherit;
   font: inherit;
@@ -488,6 +494,7 @@ body.has-entered .hero {
   .footer {
     bottom: max(16px, env(safe-area-inset-bottom));
     align-items: flex-end;
+    justify-content: space-between;
     gap: 12px;
   }
 
@@ -552,13 +559,14 @@ body.has-entered .hero {
   }
 
   .footer {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
     gap: 8px;
   }
 
   .loading {
-    text-align: left;
+    text-align: right;
   }
 }
 

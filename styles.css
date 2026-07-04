@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400&display=swap");
+
 :root {
   color-scheme: dark;
   --latin-font: "Times New Roman", Times, serif;
-  --cjk-font: "Source Han Serif SC", "Noto Serif CJK SC", "Noto Serif SC", "Songti SC", "STSong", "SimSun", serif;
+  --cjk-font: "Source Han Serif SC", "Noto Serif SC", "Noto Serif CJK SC", "Songti SC", "STSong", "SimSun", serif;
   --paper: rgba(255, 255, 255, 0.92);
   --paper-soft: rgba(255, 255, 255, 0.72);
   --shadow: rgba(0, 0, 0, 0.52);
@@ -30,6 +32,15 @@ body[data-lang="zh"] .menu-panel button[data-i18n],
 body[data-lang="zh"] .about-modal p {
   font-family: var(--cjk-font);
   font-weight: 400;
+}
+
+@media (max-width: 760px) {
+  body[data-lang="zh"] .chapter-title,
+  body[data-lang="zh"] .menu-panel button[data-i18n],
+  body[data-lang="zh"] .about-modal p {
+    font-family: var(--cjk-font);
+    font-weight: 400;
+  }
 }
 
 button {

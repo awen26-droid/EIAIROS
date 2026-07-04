@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap");
-
 :root {
   color-scheme: dark;
   --latin-font: "Times New Roman", Times, serif;
-  --cjk-font: "Noto Serif SC", "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "FangSong", serif;
   --paper: rgba(255, 255, 255, 0.92);
   --paper-soft: rgba(255, 255, 255, 0.72);
   --shadow: rgba(0, 0, 0, 0.52);
@@ -25,19 +22,6 @@ body {
   overflow: hidden;
   background: #07111a;
   font-family: var(--latin-font);
-}
-
-body[data-lang="zh"] {
-  font-family: var(--latin-font), var(--cjk-font);
-}
-
-body[data-lang="zh"] [data-i18n],
-body[data-lang="zh"] .chapter-title,
-body[data-lang="zh"] .nav-button,
-body[data-lang="zh"] .menu-panel button,
-body[data-lang="zh"] .start,
-body[data-lang="zh"] .about-modal p {
-  font-family: var(--cjk-font);
 }
 
 button {
@@ -307,10 +291,6 @@ body[data-chapter="bygone"] .bg-bygone {
     0 24px 90px rgba(0, 0, 0, 0.42);
 }
 
-body[data-lang="zh"] .about-modal {
-  font-family: var(--latin-font), var(--cjk-font);
-}
-
 .about-modal::backdrop {
   background: rgba(0, 0, 0, 0.18);
   backdrop-filter: blur(3px);
@@ -412,17 +392,6 @@ body.has-entered .hero {
 }
 
 @media (max-width: 760px) {
-  body[data-lang="zh"],
-  body[data-lang="zh"] [data-i18n],
-  body[data-lang="zh"] .chapter-title,
-  body[data-lang="zh"] .nav-button,
-  body[data-lang="zh"] .menu-panel button,
-  body[data-lang="zh"] .start,
-  body[data-lang="zh"] .about-modal,
-  body[data-lang="zh"] .about-modal p {
-    font-family: var(--cjk-font);
-  }
-
   body {
     overflow: hidden;
   }

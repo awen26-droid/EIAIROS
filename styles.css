@@ -1,6 +1,7 @@
 :root {
   color-scheme: dark;
   --latin-font: "Times New Roman", Times, serif;
+  --cjk-font: "Songti SC", "STSong", "SimSun", "Noto Serif CJK SC", serif;
   --paper: rgba(255, 255, 255, 0.92);
   --paper-soft: rgba(255, 255, 255, 0.72);
   --shadow: rgba(0, 0, 0, 0.52);
@@ -22,6 +23,19 @@ body {
   overflow: hidden;
   background: #07111a;
   font-family: var(--latin-font);
+}
+
+body[data-lang="zh"] .chapter-title,
+body[data-lang="zh"] .menu-panel button[data-i18n],
+body[data-lang="zh"] .about-modal p {
+  font-family: var(--cjk-font);
+  font-weight: 400;
+}
+
+body[data-lang="zh"] .chapter-title {
+  font-size: clamp(1.1rem, 1.95vw, 2.35rem);
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 button {

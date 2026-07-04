@@ -18,6 +18,8 @@ const copy = {
     aboutTitle: "About me",
     aboutBody:
       "Hello, and welcome.\n\nI am Sheliaster, the creator and guide of this world you are about to witness.\n\nPerhaps you have heard of me before, or perhaps this is our very first meeting. Either way, thank you for choosing to step into the universe I have created. I sincerely hope you will come to love this story and enjoy the journey that lies ahead. Your presence here is, to me, a tremendous honor.\n\nAnd finally-\nMay the glory of the stars forever guide your way.",
+    langEnglish: "English",
+    langChinese: "Chinese",
     mortal: "The Mortal Realm",
     bygone: "The Bygone Age",
     mortalTitle: "The Martyr's Final Testament",
@@ -32,6 +34,8 @@ const copy = {
     aboutTitle: "About me",
     aboutBody:
       "欢迎您，观测者。\n\n我是譞譞，也可以称呼我为Sheliaster，如你所见，是本场世界观测的主导人。\n\n也许您曾了解过我，也许没有，但不论如何，感谢您愿意造访我笔下的世界，希望您能够喜爱这个故事，享受这段旅程，这于我而言是莫大的荣幸。\n\n最后的最后--愿群星的荣光常伴您左右。",
+    langEnglish: "英文",
+    langChinese: "中文",
     mortal: "现世",
     bygone: "前尘",
     mortalTitle: "殉道者的终言",
